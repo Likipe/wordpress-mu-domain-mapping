@@ -678,7 +678,7 @@ if ( 1 == get_site_option( 'dm_map_in_admin' ) ) {
 }
 
 if ( defined( 'DOMAIN_MAPPING' ) ) {
-	add_filter( 'plugins_url', 'domain_mapping_plugins_uri', 1 );
+	#add_filter( 'plugins_url', 'domain_mapping_plugins_uri', 1 );
 	add_filter( 'theme_root_uri', 'domain_mapping_themes_uri', 1 );
 	add_filter( 'the_content', 'domain_mapping_post_content' );
 	add_action( 'wp_head', 'remote_login_js_loader' );
